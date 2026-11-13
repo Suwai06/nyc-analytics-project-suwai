@@ -1,0 +1,21 @@
+
+version: 2
+
+sources:
+  - name: group_15_raw_data
+    description: Raw NYC Open Data loaded for Group 15.
+    database: suwai-cis-baruch
+    schema: group_15_raw_data
+    tables:
+      - name: source_motor_vehicle_collisions
+        description: NYC Motor Vehicle Collisions, 2020-2025.
+
+      - name: source_traffic_signal_requests
+        description: NYC 311 Traffic Signal Condition requests, 2020-2025.
+
+  - name: geo_us_boundaries
+    description: Public US ZIP code boundaries.
+    database: bigquery-public-data
+    schema: geo_us_boundaries
+    tables:
+      - name: zip_codes
